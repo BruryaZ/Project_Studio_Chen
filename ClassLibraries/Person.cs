@@ -2,7 +2,7 @@
 {
     public class Person
     {
-        static int count = 1;
+        static int count = 0;
         private string id;
 
         public string Id
@@ -28,7 +28,7 @@
         }
         public Person()
         {
-            this.id = (count++).ToString();
+            this.id = (++count).ToString();
         }
     }
 }
